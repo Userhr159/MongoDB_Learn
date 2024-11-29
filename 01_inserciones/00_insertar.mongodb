@@ -1,0 +1,17 @@
+// Base de datos --> Colecciones -> Documentos -> Atributos (campos)
+// Para que exista una BD debe haber colecciones
+// Para que exista una Coleccion debe haber documentos
+// Para que exista documentos tienen que haber atributos
+
+//empezamos a crear una base de datos
+use ("baticell_store")
+
+ //Procedemos a crear una coleccion producto con un documento
+
+ db.products.insertOne ({
+    name : "Samsung",
+    price : 3500
+ })
+
+ //  Lista el documento creado
+ db.products.find()

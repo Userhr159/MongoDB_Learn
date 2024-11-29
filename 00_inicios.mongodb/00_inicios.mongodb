@@ -19,5 +19,7 @@ db.movies.find().count()
 
 //   Listar documentos a traves de una condiccion
 db.movies.find({countries: "USA"}).count()
+
 //  Listar documentos de USA
 db.movies.find({countries: "USA"})
+
