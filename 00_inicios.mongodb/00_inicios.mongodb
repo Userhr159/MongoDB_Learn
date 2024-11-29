@@ -1,0 +1,23 @@
+// Poner en uso una base de datos
+use ("sample_mflix")
+
+
+
+//ver la base de datos en uso
+
+db.getName()
+
+// Listar colecciones de la base de datos
+
+db.getCollectionNames()
+
+// Listar documentos de una coleecion
+db.movies.find()
+
+// cuantos documentos tiene movies 
+db.movies.find().count()
+
+//   Listar documentos a traves de una condiccion
+db.movies.find({countries: "USA"}).count()
+//  Listar documentos de USA
+db.movies.find({countries: "USA"})
